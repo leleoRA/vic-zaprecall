@@ -1,0 +1,335 @@
+.footer-concluidos {
+  width: 100%;
+  min-height: 50px;
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Recursive';
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+  padding: 10px;
+}
+
+.footer-concluidos > .container-botoes {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Você vai precisar trocar a cor dos botões e alguns textos!
+  VERDE = "#2FBE34"
+  AMARELO = "#FF922E"
+  VERMELHO = "#FF3030"
+  CINZA = "#333333" 
+*/
+
+.container-botoes > button {
+  width: 90px;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: blue;
+  border-radius: 5px;
+  border: 1px solid blue;
+  padding:5px;
+}
+
+.pergunta-fechada {
+  width: 300px;
+  height: 35px;
+  background-color: #FFFFFF;
+  margin: 12px;
+  padding: 15px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pergunta-fechada > p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.pergunta-aberta {
+  width: 300px;
+  margin: 12px;
+  padding: 15px;
+  min-height: 100px;
+  background: #FFFFD5;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pergunta-aberta > img{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+header{
+  width: 375px;
+  height: 60px;
+  margin: 42px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  width: 204px;
+  text-align: center;
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+header img{
+  width: 52px;
+  height: 60px;
+}
+
+main{
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+ 
+}
+main .topico{
+  width: 300px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+}
+
+
+h4 {
+  font-family: 'Recursive';
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+}
+
+
+main .topico ion-icon{
+  font-size: 23px;
+}
+
+
+main .espaçador{
+  width: 375px;
+  height: 75px;
+}
+/* PArte um */
+
+main .questao{
+  width: 300px;
+  height: 131px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #FFFFD5;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+  transition: all .5s;
+  transform-style: preserve-3d;
+}
+
+.costas{
+  transition: all .5s;
+  transform: rotateY(360deg)
+}
+
+main .questao h4{
+  font-weight: 400;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+main .questao .secao-pergunta{
+  width: 270px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .questao img{
+  width: 30px;
+  height: 20px;
+}
+
+main .questao img :hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* parte dois*/
+
+main .questao .secao-botoes{
+  height: auto;
+  display: flex;
+  justify-content: space-between
+}
+
+main .questao button {
+  width: 85px;
+  height: 37px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: none;
+}
+
+main .questao .backErrado{
+  background-color: #FF3030;
+
+}
+main .questao .backQuase{
+  background-color: #FF922E;
+
+}
+main .questao .backZap{
+  background-color: #2FBE34;
+}
+
+main .questao .secao-botoes .p{
+  font-family: 'Recursive';
+  font-weight: 400;
+  font-size: 14px;
+}
+footer{
+  width: 100%;
+  min-height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-top: 15px;
+}
+
+footer p{
+  font-family: 'Recursive';
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+footer .icones{
+  display: flex;
+  justify-content: center;
+  margin:6px;
+}
+
+footer .icones ion-icon {
+  font-size: 23px;
+  margin-right: 6px;
+}
+
+footer .icones,
+ion-icon[name="close-circle"]{
+  color: #FF3030;
+}
+footer .icones,
+ion-icon[name="help-circle"]{
+  color: #ff922e;
+}
+footer .icones,
+ion-icon[name="check-circle"]{
+  color: #2FBE34;
+}
+
+footer h4{
+  font-family: 'Recursive';
+  font-weight: 700;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin: 15px 0 15px;
+}
+
+footer button{
+  width: 167px;
+  height: 32px;
+  background-color: #FB6B6B;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+footer button p{
+  font-family: 'Recursive';
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+.respondido{
+  text-decoration: line-through;
+}
+.certo{
+  color: #2FBE34;
+}
+.quase{
+  color: #FF922E;
+}
+.errado {
+  color: #FF3030;
+
+}
